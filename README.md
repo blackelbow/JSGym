@@ -1,4 +1,4 @@
-# JSGym
+# JackedScript
 JavaScript functions to calculate useful metrics for weight training. 
 
 Built for use in Google Sheets, this project is a single file. Just paste it into the Script editor of a GSheet. 
