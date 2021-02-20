@@ -45,8 +45,20 @@ function calcEffectiveReps (weight, reps, max) {
   let effective_cutoff = 5;
   let max_reps = calcMaxReps(weight, max);
   let threshold = max_reps-effective_cutoff;
-  return reps-threshold
-  };
+  let theoretical_effective_reps = reps-threshold;
+
+  if (max_reps<=effective_cutoff){
+    return reps
+    }
+  else {
+    if (theoretical_effective_reps<=0) {
+      return 0
+      }
+    else {
+      return theoretical_effective_reps
+      }
+    }
+};
 
 
 
